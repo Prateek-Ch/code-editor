@@ -2,12 +2,12 @@
 
 This project was bootstrapped with [Create React App]
 
-##Running the Project
+## Running the Project
 1. Clone the Repo to your local storage
 2. cd to the directory the repo has been cloned to and to a machine with npm installed do "npm i" to install all dependencies
 3. Run the app with npm start 
 
-##Pastebin API Usage
+## Pastebin API Usage
 1. In the code replace 'YOUR API DEV KEY' with your API key after logging in with user account.
 2. Since this project has no server sending a POST request to the Pastebin API ends up with a CORS issue.
 3. Usage of cors-anywhere results in Heavy Network Traffic Error.
