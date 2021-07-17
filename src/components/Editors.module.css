@@ -1,0 +1,18 @@
+.rowC{
+    display:flex; 
+    flex-direction:row;
+    height: 570px;
+    width: 640px;
+ }
+
+ .editors_layout h3{
+     margin-left: 250px;
+     display: inline-flex;
+ }
+ .editors_layout{
+     margin-left: 80px;
+ }
+.editors_layout button{
+    float: right;
+    margin-right: 12%;
+}
