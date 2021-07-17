@@ -12,13 +12,14 @@ function Editors(props){
     const renderFrame = `<html><body>${html}</body><style>${css}</style><script>${js}</script></html>` ;
     
     function sendPaste(){
-        var request = new XMLHttpRequest();
-        request.open('POST', "https://cors-anywhere.herokuapp.com/https://pastebin.com/api/api_post.php");
-        request.setRequestHeader("XMLHttpRequest","X-Requested-With");
-        request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-        request.send(`api_dev_key=YOUR_API_DEV_KEY&api_option=paste&api_paste_private=0&api_paste_name=index.html&api_paste_expire_date=1M&api_paste_format=html5&api_paste_code=${html}`);
-        request.send(`api_dev_key=YOUR_API_DEV_KEY&api_option=paste&api_paste_private=0&api_paste_name=index.html&api_paste_expire_date=1M&api_paste_format=css&api_paste_code=${css}`);
-        request.send(`api_dev_key=YOUR_API_DEV_KEY&api_option=paste&api_paste_private=0&api_paste_name=index.html&api_paste_expire_date=1M&api_paste_format=javascript&api_paste_code=${js}`);
+        console.log("Pastebin Paste");  
+    //     var request = new XMLHttpRequest();
+    //     request.open('POST', "https://cors-anywhere.herokuapp.com/https://pastebin.com/api/api_post.php");
+    //     request.setRequestHeader("XMLHttpRequest","X-Requested-With");
+    //     request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    //     request.send(`api_dev_key=YOUR_API_DEV_KEY&api_option=paste&api_paste_private=0&api_paste_name=index.html&api_paste_expire_date=1M&api_paste_format=html5&api_paste_code=${html}`);
+    //     request.send(`api_dev_key=YOUR_API_DEV_KEY&api_option=paste&api_paste_private=0&api_paste_name=index.html&api_paste_expire_date=1M&api_paste_format=css&api_paste_code=${css}`);
+    //     request.send(`api_dev_key=YOUR_API_DEV_KEY&api_option=paste&api_paste_private=0&api_paste_name=index.html&api_paste_expire_date=1M&api_paste_format=javascript&api_paste_code=${js}`);
     }
 
     return(
